@@ -8,7 +8,7 @@
       <button class="B-margin" :class="{'buttonSelected':buttonSelect2}" @click="selectButtons('b2')"> Usuário</button>
     </div>
     <div class="inputSearch">
-      <span><input type="text" /> <i class="bi bi-search"></i></span>
+      <input type="text" class="inputHome"/> 
     </div>
   </div>
 </template>
