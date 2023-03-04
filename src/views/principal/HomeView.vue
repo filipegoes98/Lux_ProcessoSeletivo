@@ -20,7 +20,7 @@
       </button>
     </div>
     <div class="inputSearch">
-      <input type="text" class="inputHome" />
+      <input type="text" class="inputHome" v-model="searchUser" />
 
       <button class="button-icon" @click="searchGit">
         <img
@@ -41,6 +41,7 @@ export default {
     return {
       buttonSelect1: false,
       buttonSelect2: false,
+      searchUser: "",
     };
   },
   methods: {
@@ -54,7 +55,37 @@ export default {
       }
     },
     searchGit() {
-      alert("Searching");
+      if (this.buttonSelect1 == false && this.buttonSelect2 == false) {
+        this.$swal({
+          icon: "error",
+          title: "Oops...",
+          text: "Nenhum botão foi selecionado, volte e selecione o tipo de pesquisa ",
+        });
+        return;
+      } else if (this.searchUser == "") {
+        this.$swal({
+          icon: "error",
+          title: "Oops...",
+          text:
+            "Nenhum item está sendo pesquisado, preencha o campo determinado e tente novamente",
+        });
+        return;
+      }
+      this.$http.get("/" + this.searchUser).then(
+        (res) => {
+          this.$swal("Teste ");
+          console.log(res);
+        },
+        () =>
+          this.$swal({
+            position: "center",
+            icon: "error",
+            title: "Desculpe!",
+            text: " Não foi possível encontrar o repositório ou usuário desejado! ",
+            confirmButtonColor: "#d33",
+            timer: 5000,
+          })
+      );
     },
   },
 };

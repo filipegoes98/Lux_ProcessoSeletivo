@@ -8,36 +8,12 @@ import App from './App.vue'
 import router from './router'
 
 
-// import { library } from '@fortawesome/fontawesome-svg-core'
+Vue.prototype.$eventHub = new Vue();
 
-// /* import font awesome icon component */
-// import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-
-// /* import specific icons */
-// import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
-
-// /* add icons to the library */
-// library.add(faUserSecret)
-
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import {
-    faTwitter,
-    faFacebook,
-    faStackOverflow,
-    faGithub,
-    faSearchengin
-
-} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-
-library.add(faBars, faTwitter, faFacebook, faStackOverflow, faGithub, faSearchengin);
-Vue.component("font-awesome-icon", FontAwesomeIcon);
-
-/* add font awesome icon component */
-Vue.component('font-awesome-icon', FontAwesomeIcon)
-
-Vue.config.productionTip = false
+// import sweealert2
+import VueSweetalert2 from 'vue-sweetalert2';
+import 'sweetalert2/dist/sweetalert2.min.css';
+Vue.use(VueSweetalert2);
 
 
 Vue.config.productionTip = false
