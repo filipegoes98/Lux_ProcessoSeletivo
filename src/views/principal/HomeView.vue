@@ -1,11 +1,10 @@
 <template>
   <div class="home">
     <div class="iconsGithub">
-      <img src="../../assets/img/github-mark.png" alt=" GitLigo" />
+      <img src="../../assets/img/github-mark.png" alt=" Git_Logo" />
     </div>
-    <div class="buttonsHome">
-      <button>Repositório</button>
-      <button>Usuário</button>
+    <div class="buttons">
+      <button class="btn btn-succes"> Teste 1</button>
     </div>
     <div class="inputSearch">
       <span><input type="text" /> <i class="bi bi-search"></i></span>

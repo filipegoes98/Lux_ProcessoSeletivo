@@ -44,22 +44,34 @@ nav a.router-link-exact-active {
 /* Page Home */
 
 .home {
-    position: absolute;
-    left: 44.17%;
-    right: 44.1%;
-    top: 13.48%;
-    bottom: 70.02%;
-    border: solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
 }
 
 .iconsGithub {
-    /* height:  rem;
-    width: 100%; */
-    border: solid 1px red;
+    width: 8%;
+    padding-bottom: 3rem;
 }
 
-
-/* .iconsGithub img {
+.iconsGithub img {
     width: 100%;
-    height: 100%;
-} */
+}
+
+.buttons {
+    border: solid;
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+.buttons button {
+    margin: 0 5rem
+}
+
+@media only screen and (max-width: 1000px) {
+    .iconsGithub {
+        width: 5rem;
+    }
+}
