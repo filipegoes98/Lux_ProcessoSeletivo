@@ -2,6 +2,11 @@
     font-family: Inter, sans-serif;
 }
 
+.icon {
+    width: 2rem;
+    height: 2rem;
+}
+
 
 /* Menu header */
 
@@ -65,7 +70,7 @@ nav a.router-link-exact-active {
     margin-bottom: 2rem;
 }
 
-button {
+.button-choose {
     width: 186px;
     height: 51px;
     left: 745px;
@@ -86,18 +91,32 @@ button {
 
 .inputSearch {
     width: 50%;
-}
-
-.inputHome {
-    box-sizing: border-box;
-    width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
     height: 3em;
     left: 330px;
     top: 476px;
-    background: #FFFFFF;
+    box-sizing: border-box;
     border: 2px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputHome {
+    width: 100%;
+    height: 100%;
+    border-color: transparent;
     border-radius: 10px;
+}
+
+.button-icon {
+    width: 8%;
+    height: 100%;
+    background: transparent;
+    border-radius: 0 10px 10px 0;
+    border: 0px transparent;
 }
 
 @media only screen and (max-width: 1000px) {
