@@ -4,7 +4,8 @@
       <img src="../../assets/img/github-mark.png" alt=" Git_Logo" />
     </div>
     <div class="buttons">
-      <button class="btn btn-succes"> Teste 1</button>
+      <button class="B-margin" :class="{'buttonSelected':buttonSelect1}" @click="selectButtons('b1')"> Repositório</button>
+      <button class="B-margin" :class="{'buttonSelected':buttonSelect2}" @click="selectButtons('b2')"> Usuário</button>
     </div>
     <div class="inputSearch">
       <span><input type="text" /> <i class="bi bi-search"></i></span>
@@ -16,5 +17,23 @@
 export default {
   name: "HomeView",
   components: {},
+  data() {
+    return {
+      buttonSelect1: false,
+      buttonSelect2: false,
+
+    };
+  },
+  methods:{
+    selectButtons(ref){
+      if(ref =='b1'){
+        this.buttonSelect1 = true;
+        this.buttonSelect2 = false;
+      }else{
+        this.buttonSelect1 = false;
+        this.buttonSelect2 = true;
+      }
+    }
+  }
 };
 </script>

@@ -61,9 +61,23 @@ nav a.router-link-exact-active {
 }
 
 .buttons {
-    border: solid;
     width: 50%;
     margin-bottom: 2rem;
+}
+
+button {
+    width: 186px;
+    height: 51px;
+    left: 745px;
+    top: 379px;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+.buttonSelected {
+    color: #ffffff;
+    background: #000000;
 }
 
 .buttons button {
