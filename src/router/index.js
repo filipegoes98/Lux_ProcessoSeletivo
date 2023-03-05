@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views//principal/HomeView.vue'
 import FavView from '../views/AboutView.vue'
-import ResulltSearch from '../views/resultView.vue'
+import UserSelect from '../views/resultView.vue'
 
 Vue.use(VueRouter)
 
@@ -12,16 +12,16 @@ const routes = [{
         component: HomeView,
     },
     {
-        path: '/result',
-        name: 'result',
-        props: { result: Object },
-        component: ResulltSearch
-    },
-    {
         path: '/favoritos',
         name: 'favoritos',
         component: FavView // route level code-splitting
-    }
+    },
+    {
+        path: '/usuario/:name',
+        name: 'userSelect',
+        component: UserSelect // route level code-splitting
+    },
+
 ]
 
 const router = new VueRouter({
