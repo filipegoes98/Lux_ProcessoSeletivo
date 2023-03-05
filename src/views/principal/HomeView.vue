@@ -153,7 +153,6 @@ export default {
       );
     },
     selectUser(user) {
-      alert(user);
       this.$router.push("/usuario/" + user);
     },
   },
