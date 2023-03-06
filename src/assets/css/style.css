@@ -181,3 +181,10 @@ nav a.router-link-exact-active {
     flex-direction: column !important;
     align-items: flex-start !important;
 }
+
+.repCss {
+    display: flex!important;
+    flex-direction: column!important;
+    align-items: flex-start!important;
+    border-bottom: solid 1px #000000;
+}

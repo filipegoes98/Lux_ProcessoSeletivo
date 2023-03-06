@@ -63,44 +63,9 @@ export default {
       buttonSelect1: false,
       buttonSelect2: false,
       searchUser: "",
-      result: [
-        {
-          login: "fbatera1998",
-          id: 83172085,
-          node_id: "MDQ6VXNlcjgzMTcyMDg1",
-          avatar_url: "https://avatars.githubusercontent.com/u/83172085?v=4",
-          gravatar_id: "",
-          url: "https://api.github.com/users/fbatera1998",
-          html_url: "https://github.com/fbatera1998",
-          followers_url: "https://api.github.com/users/fbatera1998/followers",
-          following_url:
-            "https://api.github.com/users/fbatera1998/following{/other_user}",
-          gists_url: "https://api.github.com/users/fbatera1998/gists{/gist_id}",
-          starred_url: "https://api.github.com/users/fbatera1998/starred{/owner}{/repo}",
-          subscriptions_url: "https://api.github.com/users/fbatera1998/subscriptions",
-          organizations_url: "https://api.github.com/users/fbatera1998/orgs",
-          repos_url: "https://api.github.com/users/fbatera1998/repos",
-          events_url: "https://api.github.com/users/fbatera1998/events{/privacy}",
-          received_events_url: "https://api.github.com/users/fbatera1998/received_events",
-          type: "User",
-          site_admin: false,
-          name: "Filipe Emanuel de Góes",
-          company: "Prefeitura de Tatuí",
-          blog: "",
-          location: null,
-          email: null,
-          hireable: null,
-          bio: null,
-          twitter_username: null,
-          public_repos: 4,
-          public_gists: 0,
-          followers: 0,
-          following: 1,
-          created_at: "2021-04-25T13:57:48Z",
-          updated_at: "2023-03-04T14:13:56Z",
-        },
-      ],
-    };
+      result: []
+    }
+
   },
   methods: {
     selectButtons(ref) {

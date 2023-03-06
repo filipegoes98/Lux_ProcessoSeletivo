@@ -2,7 +2,7 @@
   <div>
     <div class="container">
       <div class="row">
-        <div class="col-md-auto userInfo border-solid">
+        <div class="col-md-auto userInfo">
           <div id="">
             <img class="avatarUser" :src="resultUser.avatar_url" alt="" srcset="" />
             <div class="alignInfoUser">
@@ -29,10 +29,12 @@
             </div>
           </div>
         </div>
-        <div class="col border-solid">
+        <div class="col" style="margin-left: 2rem">
           <div class="repCss" v-for="rep in resultRep" :key="rep.id">
             <h2>{{ rep.name }}</h2>
-            <h4>{{ rep.description }}</h4>
+            <h4>{{ rep.description == "" ? "" : rep.description }}</h4>
+            <h4>{{ rep.stargazers_count }}</h4>
+            <hr />
           </div>
         </div>
       </div>
